@@ -1,0 +1,31 @@
+StegB64.py (Esteganografia Base64) por hecky
+
+Herramienta Esteganográfica que oculta una cadena de texto o archivo en una cadena que simula ser Base64.
+Herramienta basada en la tecnica creada por hecky >> http://neobits.org/?p=527
+
+Ayuda:
+	./stegb64.py -h		#Ayuda
+
+Ejemplo-Ocultar texto:
+
+	./stegb64.py -t "neobits.org"
+		jMIRyuYRRkwTDiRCJEYVQiGuJMqnHLSTpGuNsFVgJQeutKTjXqkedToCNFObOiqPBIYXQoWWLgUWdDYLXYSrhYme=
+	./stegb64.py -t "neobits.org"
+		tEgxyGYXjOMpLgXCJUeHyCeSLuivrTKRNGiREJhslwMiTohDjMwiVlWIfbGdqqYvDmeNecOiPuQUTVoDFIQfrqQS=
+
+En este ejemplo se oculta la misma cadena de texto "neobits.org" pero las salidas son diferentes. Esta tecnica ofrece la flexibilidad de ser la salida aleatoria.
+
+Ejemplo-Recuperar texto:
+
+	./stegb64.py -r "PigngTnTtqWjrEFGdsSlrfQexoKfOhYyXkmkmxlq="
+		hecky
+	./stegb64.py -r "PsuvuBPvpYMTKdhMbGUFDijtfYMvPexI=="
+		hide
+
+El programa por si solo esta documentado.
+
+
+Autor:		hecky
+Correo:		hecky@neobits.org
+Web:		http://neobits.org
+twitter:	http://twitter.com/hecky
